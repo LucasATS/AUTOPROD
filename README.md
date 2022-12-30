@@ -16,7 +16,8 @@
 > .\venv\Scripts\activate
 > Install: <pip install django, npm install --->
 > cd BACKEND
-> django-admin startproject
+> django-admin startproject autoprod
+> py .\manage.py startapp app 
 > py .\manage.py migrate
 > py .\manage.py makemigrations
 > py .\manage.py runserver
