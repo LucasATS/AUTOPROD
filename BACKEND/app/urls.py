@@ -3,6 +3,9 @@ from . import views
 
 urlpatterns = [
     path('configuracoes', views.Configuracoes, name='Configs'),
-    path('produtos', views.Produtos, name='Produtos'),
+    path('venda', views.Produtos, name='Venda'),
     path('', views.Index, name='Home'),
+    
+    path('produtos', views.Produtos, name='Produtos'),
+    path('deletar/produto/<int:id>', views.DeletarProduto, name='deletar/produto'),
 ]

@@ -4,6 +4,8 @@ from .formularios import *
 import json
 
 
+def Index(request):
+    return render(request, 'index.html')
 # def CadGrupo(request):
 #     if (request.POST):
 #         form = GrupoForm(request.POST)
@@ -66,6 +68,7 @@ def Produtos(request):
         form = ProdutoForms(request.POST)
         if (form.is_valid()):
             form.save()
+            return redirect('Produtos')
 
     context = {
         'form': ProdutoForms,
@@ -74,5 +77,8 @@ def Produtos(request):
     return render(request, 'pages/produtos.html', context=context)
 
 
-def Index(request):
-    return render(request, 'index.html')
+def DeletarProduto(request, id):
+    if (request.POST):
+        Produto.objects.filter(id=id).delete()
+
+    return redirect('Produtos')

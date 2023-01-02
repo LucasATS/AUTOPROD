@@ -1,17 +1,29 @@
 <section>
     <table>
         <tr>
+            <th>id</th>
             <th>Produto</th>
             <th>Valor</th>
             <th>Estoque</th>
             <th>Cód</th>
+            <th></th>
         </tr>
         {% for x in ListaProdutos %}
         <tr>
+            <td> {{ x.id }} </td>
             <td> {{ x.descricao }} </td>
             <td> R${{ x.preco }} </td>
             <td> {{ x.qntEstoque }} </td>
             <td> {{ x.codExterno }} </td>
+            <td> {{ x.margemVenda }} </td>
+            <td style='display: flex; flex-direction: row;'> 
+                <button>Editar</button>
+
+                <form action="{% url 'deletar/produto' id=x.id %}" method="post">
+                    {% csrf_token %}
+                    <button>DELETAR</button>
+                 </form>
+            </td>
         </tr>
         {% endfor %}
     </table>
