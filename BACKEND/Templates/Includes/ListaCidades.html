@@ -1,0 +1,15 @@
+<section>
+    <h4> Lista de Cidades </h4>
+    <table>
+        <tr>
+            <th>Cidade</th>
+            <th>UF</th>
+        </tr>
+        {% for x in CidadeLista %}
+        <tr>
+            <td> {{ x.cidade }} </td>
+            <td> {{ x.uf }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>

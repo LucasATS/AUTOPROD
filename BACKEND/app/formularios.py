@@ -20,7 +20,13 @@ class UnidadeForm(ModelForm):
         fields = ['titulo', 'descricao']
 
 
-class VendaForms(ModelForm):
+# class VendaForms(ModelForm):
+#     class Meta:
+#         model = Venda
+#         fields = ['produtos', 'valorTotal', 'desconto', 'data']
+
+
+class ProdutoForms(ModelForm):
     class Meta:
-        model = Venda
-        fields = ['produto', 'valor', 'quantidade']
+        model = Produto
+        fields = ['descricao', 'preco', 'margemVenda', 'peso', 'medidas', 'qntEstoque', 'qntMin', 'codExterno', 'grupo', 'unidade']

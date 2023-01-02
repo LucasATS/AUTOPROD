@@ -35,7 +35,7 @@ class Produto(models.Model):
     peso = models.DecimalField(max_digits=6,  decimal_places=4)
     medidas = models.CharField(max_length=56)
     qntEstoque = models.IntegerField()
-    qntMin = models.IntegerField()
+    qntMin = models.IntegerField(null=True)
     codExterno = models.CharField(max_length=125, null=True)  # PODE SER O CÓDIGO DE BARRA
     dataCadastro = models.DateField(default=date.today)
     dataModificacao = models.DateField(default=date.today)

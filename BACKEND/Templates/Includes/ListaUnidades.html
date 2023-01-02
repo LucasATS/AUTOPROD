@@ -1,0 +1,15 @@
+<section>
+    <h4> Lista de Unidades </h4>
+    <table>
+        <tr>
+            <th>Unidade</th>
+            <th>Descrição</th>
+        </tr>
+        {% for x in UnidadeLista %}
+        <tr>
+            <td> {{ x.titulo }} </td>
+            <td> {{ x.descricao }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>

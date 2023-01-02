@@ -28,14 +28,13 @@
 
 ## __🎯 METAS__
 - [ ] SEO
-- [ ] Tela de vendas, curva ABC.
-- [ ] Tela de PDV
-     - [ ] Versão caixa
-     - [ ] Versão caixa automatica
-- [ ] Tela Produtos
-     - [ ] CRUD Produtos
-     - [ ] Produtos {Descrição, preço, margem de venda, quantidade, código de identificação externa (cod. barra)}
-- [ ] Tela Home
+- [ ] Tela de vendas.
+- [ ] Tela de dados - curva ABC.
+- [ ] Tela de PDV.
+     - [ ] Versão caixa.
+     - [ ] Versão caixa automatico.
+- [ ] Tela Produtos.
+- [-] Tela Home
 
 <!--
 ## __❤ AGRADECIMENTOS__

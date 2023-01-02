@@ -1,0 +1,17 @@
+<section>
+    <h2> Lista de Vendas </h2>
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+        </tr>
+        {% for x in vendas %}
+        <tr>
+            <td> {{ x.produto.descricao }} </td>
+            <td> {{ x.valor }} </td>
+            <td> {{ x.quantidade }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>

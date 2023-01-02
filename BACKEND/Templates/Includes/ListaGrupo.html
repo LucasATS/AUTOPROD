@@ -1,0 +1,13 @@
+<section>
+    <h4> Lista de Grupos </h4>
+    <table>
+        <tr>
+            <th>Grupo</th>
+        </tr>
+        {% for x in GrupoLista %}
+        <tr>
+            <td> {{ x.grupo }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>

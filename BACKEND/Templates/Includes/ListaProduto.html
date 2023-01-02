@@ -1,0 +1,18 @@
+<section>
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Estoque</th>
+            <th>Cód</th>
+        </tr>
+        {% for x in ListaProdutos %}
+        <tr>
+            <td> {{ x.descricao }} </td>
+            <td> R${{ x.preco }} </td>
+            <td> {{ x.qntEstoque }} </td>
+            <td> {{ x.codExterno }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
